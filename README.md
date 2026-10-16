@@ -4,7 +4,7 @@ An interactive, mobile-friendly merchant learning prototype by **Team PluemPiTi*
 
 ## Run locally
 
-Requirements: Node.js 18 or newer. There are no runtime dependencies and no build step.
+Requirements: Node.js 18 or newer. There are no runtime dependencies.
 
 ```bash
 npm start
@@ -17,6 +17,21 @@ npm test
 ```
 
 The root `index.html` can also be hosted on any static web host. Use an HTTP server because the application imports a JavaScript module.
+
+## Deploy to Vercel
+
+1. Import the [GitHub repository](https://github.com/svkhun/Grab) into Vercel and select the `main` branch.
+2. Keep the project root at `.`. The checked-in `vercel.json` selects the **Other** framework, runs `npm run build`, and publishes `dist/`.
+3. No environment variables, server command, or Node web service are required. Click **Deploy**. Later pushes to `main` can trigger redeploys through the Git integration.
+
+The build copies only `index.html`, `styles.css`, `app.js`, and `logic.mjs` into `dist/`. The local Node server, tests, README, and original source documents are not part of the deployed website. To check the exact output locally:
+
+```bash
+npm run build
+npm run preview
+```
+
+Open <http://127.0.0.1:4173>. `npm run preview` uses the same small HTTP server as `npm start`, but serves `dist/` instead of the project root.
 
 ## Prototype flow
 
@@ -61,3 +76,5 @@ The original ZIP, presentation, and PDF remain local source material and are int
 | `logic.mjs` | Pure calculation and input validation functions |
 | `logic.test.mjs` | Tests for documented examples and invalid inputs |
 | `server.mjs` | Dependency-free local HTTP server |
+| `scripts/build.mjs` | Allowlist build for static deployment |
+| `vercel.json` | Vercel build and output configuration |
