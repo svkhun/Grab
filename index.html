@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="th">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,92 +12,92 @@
     <div class="app-shell">
       <header class="topbar">
         <a class="brand" href="#home" aria-label="Margin Missions home"><span class="brand-grab">Grab</span><span class="brand-divider"></span><span class="brand-name">Margin<br />Missions</span></a>
-        <div class="topbar-right"><span class="demo-pill"><span class="pulse-dot"></span>Interactive prototype</span><div class="merchant-avatar" aria-label="Demo merchant">พ</div></div>
+        <div class="topbar-right"><span class="demo-pill"><span class="pulse-dot"></span>Interactive prototype</span><div class="language-switch" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="th" aria-pressed="false">ไทย</button></div><div class="merchant-avatar" aria-label="Demo merchant">M</div></div>
       </header>
 
       <main id="home">
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-line"></span> GRABMERCHANT ACADEMY · แนวคิดต้นแบบ</div>
-            <h1 id="hero-title">โปรนี้คุ้ม<br /><span>กับร้านคุณไหม?</span></h1>
-            <p>ใช้ต้นทุนของเมนูเดียว เปรียบเทียบทางเลือก แล้วฝึกตัดสินใจก่อนเริ่มทดลองจริง</p>
-            <div class="hero-meta"><span>◷ ประมาณ 5 นาที</span><span>◎ ไม่ต้องเชื่อม POS</span><span>✓ เจ้าของร้านอนุมัติเอง</span></div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> GRABMERCHANT ACADEMY · CONCEPT PROTOTYPE</div>
+            <h1 id="hero-title">Will this promotion<br /><span>work for your shop?</span></h1>
+            <p>Use the costs of one menu item to compare your options before running a real test.</p>
+            <div class="hero-meta"><span>◷ About 5 minutes</span><span>◎ No POS connection needed</span><span>✓ Owner approves every action</span></div>
           </div>
           <div class="hero-graphic" aria-hidden="true">
             <div class="graphic-orbit orbit-one"></div><div class="graphic-orbit orbit-two"></div>
-            <div class="graphic-label label-top">ยอดขาย ≠ กำไร</div>
-            <div class="graphic-center"><div class="graphic-small">หนึ่งเมนู · หนึ่งคำตัดสิน</div><div class="graphic-big">฿25</div><div class="graphic-small">เงินเหลือต่อออเดอร์</div></div>
-            <div class="graphic-label label-bottom">รู้ต้นทุนก่อนทำโปร ↗</div>
+            <div class="graphic-label label-top">Sales ≠ profit</div>
+            <div class="graphic-center"><div class="graphic-small">One menu · One decision</div><div class="graphic-big">฿25</div><div class="graphic-small">Contribution per order</div></div>
+            <div class="graphic-label label-bottom">Know your costs first ↗</div>
           </div>
         </section>
 
         <section class="mission" aria-label="Margin Missions interactive lesson">
           <div class="mission-head">
-            <div><p class="section-kicker">MISSION 01 / PROFIT DECISION</p><h2>ฝึกตัดสินใจจากตัวเลขของร้าน</h2></div>
-            <span class="source-badge">ตัวเลขเริ่มต้นเป็นตัวอย่างสมมติ</span>
+            <div><p class="section-kicker">MISSION 01 / PROFIT DECISION</p><h2>Make a decision with your own numbers</h2></div>
+            <span class="source-badge">Starting values are synthetic examples</span>
           </div>
           <nav class="steps" aria-label="Mission steps">
-            <button class="step active" type="button" data-step="1" aria-current="step"><span class="step-no">01</span><span><strong>เช็กต้นทุน</strong><small>รู้เงินเหลือต่อออเดอร์</small></span></button>
-            <button class="step" type="button" data-step="2"><span class="step-no">02</span><span><strong>เทียบทางเลือก</strong><small>ลองเปลี่ยนสมมติฐาน</small></span></button>
-            <button class="step" type="button" data-step="3"><span class="step-no">03</span><span><strong>ฝึก & วางแผน</strong><small>เจ้าของร้านตัดสินใจ</small></span></button>
-            <button class="step" type="button" data-step="4"><span class="step-no">04</span><span><strong>ทบทวนผล</strong><small>ดูผลโดยไม่ด่วนสรุป</small></span></button>
+            <button class="step active" type="button" data-step="1" aria-current="step"><span class="step-no">01</span><span><strong>Check costs</strong><small>Find contribution per order</small></span></button>
+            <button class="step" type="button" data-step="2"><span class="step-no">02</span><span><strong>Compare options</strong><small>Change the assumptions</small></span></button>
+            <button class="step" type="button" data-step="3"><span class="step-no">03</span><span><strong>Practise & plan</strong><small>Owner makes the call</small></span></button>
+            <button class="step" type="button" data-step="4"><span class="step-no">04</span><span><strong>Review results</strong><small>Interpret with care</small></span></button>
           </nav>
 
           <div class="mission-body">
             <div class="stage-column">
               <section class="stage" id="stage-1" aria-labelledby="stage-1-title">
-                <div class="stage-heading"><span class="stage-icon">01</span><div><p class="section-kicker">เริ่มจากสิ่งที่คุณยืนยันได้</p><h3 id="stage-1-title">เมนูนี้เหลือเงินจริงเท่าไร?</h3><p class="stage-intro">กรอกราคาขายและต้นทุนที่เปลี่ยนตามจำนวนออเดอร์ หากยังไม่ทราบต้นทุนใด ให้เว้นไว้และตรวจสอบก่อนคำนวณ</p></div></div>
-                <div class="menu-strip"><div class="menu-illustration" aria-hidden="true">♨</div><div><strong>เมนูตัวอย่างของร้าน</strong><span>แก้ตัวเลขด้านล่างให้ตรงกับเมนูของคุณ</span></div><span class="sample-chip">SAMPLE MENU</span></div>
+                <div class="stage-heading"><span class="stage-icon">01</span><div><p class="section-kicker">Start with costs you can confirm</p><h3 id="stage-1-title">How much does this item contribute?</h3><p class="stage-intro">Enter your selling price and costs that change with each order. Leave unknown costs blank and confirm them before calculating.</p></div></div>
+                <div class="menu-strip"><div class="menu-illustration" aria-hidden="true">♨</div><div><strong>Sample menu item</strong><span>Replace the numbers below with your own</span></div><span class="sample-chip">SAMPLE MENU</span></div>
                 <div class="field-grid">
-                  <label class="field"><span>ราคาขายต่อออเดอร์</span><div class="input-wrap"><span>฿</span><input id="price" type="number" min="0" step="any" value="100" inputmode="decimal" required /></div></label>
-                  <label class="field"><span>ค่าวัตถุดิบ</span><div class="input-wrap"><span>฿</span><input id="ingredients" type="number" min="0" step="any" value="35" inputmode="decimal" required /></div></label>
-                  <label class="field"><span>ค่าบรรจุภัณฑ์</span><div class="input-wrap"><span>฿</span><input id="packaging" type="number" min="0" step="any" value="5" inputmode="decimal" required /></div></label>
-                  <label class="field"><span>ค่าบริการแพลตฟอร์มต่อออเดอร์</span><div class="input-wrap"><span>฿</span><input id="platform" type="number" min="0" step="any" value="30" inputmode="decimal" required /></div></label>
-                  <label class="field"><span>ต้นทุนผันแปรอื่น ๆ</span><div class="input-wrap"><span>฿</span><input id="other" type="number" min="0" step="any" value="5" inputmode="decimal" required /></div></label>
-                  <label class="field"><span>ยอดออเดอร์ต่อสัปดาห์ปกติ</span><div class="input-wrap"><span>#</span><input id="orders" type="number" min="1" step="1" value="100" inputmode="numeric" required /></div></label>
+                  <label class="field"><span>Selling price per order</span><div class="input-wrap"><span>฿</span><input id="price" type="number" min="0" step="any" value="100" inputmode="decimal" required /></div></label>
+                  <label class="field"><span>Ingredients</span><div class="input-wrap"><span>฿</span><input id="ingredients" type="number" min="0" step="any" value="35" inputmode="decimal" required /></div></label>
+                  <label class="field"><span>Packaging</span><div class="input-wrap"><span>฿</span><input id="packaging" type="number" min="0" step="any" value="5" inputmode="decimal" required /></div></label>
+                  <label class="field"><span>Platform charges per order</span><div class="input-wrap"><span>฿</span><input id="platform" type="number" min="0" step="any" value="30" inputmode="decimal" required /></div></label>
+                  <label class="field"><span>Other variable costs</span><div class="input-wrap"><span>฿</span><input id="other" type="number" min="0" step="any" value="5" inputmode="decimal" required /></div></label>
+                  <label class="field"><span>Usual weekly orders</span><div class="input-wrap"><span>#</span><input id="orders" type="number" min="1" step="1" value="100" inputmode="numeric" required /></div></label>
                 </div>
-                <div class="hint-box"><span class="hint-icon">i</span><p>฿30 เป็นเพียงค่าตัวอย่าง ไม่ใช่อัตราค่าธรรมเนียมของ Grab โปรดตรวจสอบยอดหักจริง ภาษี และส่วนร่วมจ่ายก่อนใช้ตัดสินใจ</p></div>
+                <div class="hint-box"><span class="hint-icon">i</span><p>THB 30 is an example, not a Grab fee quote. Confirm actual settlement charges, tax, and co-funding before making a real decision.</p></div>
                 <p id="cost-error" class="form-error" role="alert"></p>
-                <div class="stage-actions"><button class="primary-btn" type="button" id="go-compare">เปรียบเทียบทางเลือก <span>→</span></button></div>
+                <div class="stage-actions"><button class="primary-btn" type="button" id="go-compare">Compare two options <span>→</span></button></div>
               </section>
 
               <section class="stage hidden" id="stage-2" aria-labelledby="stage-2-title">
-                <div class="stage-heading"><span class="stage-icon">02</span><div><p class="section-kicker">ทดลองก่อนจ่ายจริง</p><h3 id="stage-2-title">ยอดขายเพิ่ม อาจเหลือเงินน้อยลง</h3><p class="stage-intro">ปรับส่วนลด ต้นทุนทดลองรูป และจำนวนออเดอร์ที่ <strong>สมมติว่า</strong> จะเพิ่มขึ้น แล้วเทียบเงินเหลือรายสัปดาห์</p></div></div>
-                <div class="sim-controls"><label class="field"><span>ส่วนลดต่อออเดอร์</span><div class="input-wrap"><span>฿</span><input id="discount" type="number" min="0" step="any" value="10" inputmode="decimal" /></div></label><label class="field"><span>งบทดลองปรับรูปเมนู</span><div class="input-wrap"><span>฿</span><input id="photo-cost" type="number" min="0" step="any" value="200" inputmode="decimal" /></div></label></div>
-                <div class="slider-card"><div><strong>ถ้าออเดอร์เพิ่มขึ้น</strong><span>สมมติฐาน ไม่ใช่ผลคาดการณ์จาก AI</span></div><div class="slider-value"><output id="uplift-value" for="uplift">+20%</output></div><input id="uplift" type="range" min="0" max="100" step="1" value="20" aria-label="สมมติฐานจำนวนออเดอร์ที่เพิ่มขึ้นเป็นเปอร์เซ็นต์" /><div class="range-labels"><span>0%</span><span>50%</span><span>100%</span></div></div>
+                <div class="stage-heading"><span class="stage-icon">02</span><div><p class="section-kicker">Simulate before spending</p><h3 id="stage-2-title">More orders can still leave less money</h3><p class="stage-intro">Change the discount, photo test cost, and <strong>assumed</strong> order uplift to compare weekly contribution.</p></div></div>
+                <div class="sim-controls"><label class="field"><span>Discount per order</span><div class="input-wrap"><span>฿</span><input id="discount" type="number" min="0" step="any" value="10" inputmode="decimal" /></div></label><label class="field"><span>Photo test cost</span><div class="input-wrap"><span>฿</span><input id="photo-cost" type="number" min="0" step="any" value="200" inputmode="decimal" /></div></label></div>
+                <div class="slider-card"><div><strong>What if orders increase?</strong><span>An assumption, not an AI forecast</span></div><div class="slider-value"><output id="uplift-value" for="uplift">+20%</output></div><input id="uplift" type="range" min="0" max="100" step="1" value="20" aria-label="Assumed order uplift as a percentage" /><div class="range-labels"><span>0%</span><span>50%</span><span>100%</span></div></div>
                 <p id="compare-error" class="form-error" role="alert"></p>
                 <div class="comparison-grid">
-                  <article class="comparison-card baseline"><div class="comparison-top"><span class="option-icon">▦</span><span>ฐานเปรียบเทียบ</span></div><h4>ไม่ทำโปร</h4><div class="comparison-amount" id="baseline-total">฿2,500</div><p>เงินเหลือรวมต่อสัปดาห์</p><div class="comparison-rule"><span id="baseline-unit">฿25</span> / ออเดอร์</div></article>
-                  <article class="comparison-card discount"><div class="comparison-top"><span class="option-icon">%</span><span>ทางเลือก A</span></div><h4>ให้ส่วนลด</h4><div class="comparison-amount" id="discount-total">฿1,800</div><p>เงินเหลือรวมต่อสัปดาห์</p><div class="comparison-rule"><span id="discount-delta">−฿700</span> เทียบกับฐาน</div></article>
-                  <article class="comparison-card photo"><div class="comparison-top"><span class="option-icon">✦</span><span>ทางเลือก B</span></div><h4>ปรับรูปเมนู</h4><div class="comparison-amount" id="photo-total">฿2,800</div><p>เงินเหลือรวมหลังหักงบทดลอง</p><div class="comparison-rule"><span id="photo-delta">+฿300</span> เทียบกับฐาน</div></article>
+                  <article class="comparison-card baseline"><div class="comparison-top"><span class="option-icon">▦</span><span>Baseline</span></div><h4>No promotion</h4><div class="comparison-amount" id="baseline-total">฿2,500</div><p>Weekly contribution</p><div class="comparison-rule"><span id="baseline-unit">฿25</span> / order</div></article>
+                  <article class="comparison-card discount"><div class="comparison-top"><span class="option-icon">%</span><span>Option A</span></div><h4>Offer a discount</h4><div class="comparison-amount" id="discount-total">฿1,800</div><p>Weekly contribution</p><div class="comparison-rule"><span id="discount-delta">−฿700</span> vs. baseline</div></article>
+                  <article class="comparison-card photo"><div class="comparison-top"><span class="option-icon">✦</span><span>Option B</span></div><h4>Improve the menu photo</h4><div class="comparison-amount" id="photo-total">฿2,800</div><p>Weekly contribution after test cost</p><div class="comparison-rule"><span id="photo-delta">+฿300</span> vs. baseline</div></article>
                 </div>
-                <div class="insight-row"><div><span class="insight-symbol">↗</span><div><strong>ส่วนลดต้องเพิ่มออเดอร์</strong><b id="discount-break-even">66.7%</b><small>เพื่อให้ได้เงินเหลือเท่าเดิม</small></div></div><div><span class="insight-symbol">◎</span><div><strong>การทดลองรูปต้องเพิ่ม</strong><b id="photo-break-even">8 ออเดอร์</b><small>เพื่อคืนทุนของการทดลอง</small></div></div></div>
-                <div class="stage-actions split"><button class="text-btn" type="button" data-back="1">← แก้ต้นทุน</button><button class="primary-btn" type="button" id="go-practice">ฝึกใช้หลักคิดนี้ <span>→</span></button></div>
+                <div class="insight-row"><div><span class="insight-symbol">↗</span><div><strong>Discount needs an uplift of</strong><b id="discount-break-even">66.7%</b><small>to keep contribution unchanged</small></div></div><div><span class="insight-symbol">◎</span><div><strong>Photo test needs</strong><b id="photo-break-even">8 orders</b><small>to cover the test cost</small></div></div></div>
+                <div class="stage-actions split"><button class="text-btn" type="button" data-back="1">← Edit costs</button><button class="primary-btn" type="button" id="go-practice">Practise this rule <span>→</span></button></div>
               </section>
 
               <section class="stage hidden" id="stage-3" aria-labelledby="stage-3-title">
-                <div class="stage-heading"><span class="stage-icon">03</span><div><p class="section-kicker">พิสูจน์ว่าคุณนำไปใช้ได้</p><h3 id="stage-3-title">ลองโจทย์ใหม่ด้วยตัวเอง</h3><p class="stage-intro">เมนูอีกจานเหลือเงิน <strong>฿20</strong> ต่อออเดอร์ หลังลดราคาเหลือ <strong>฿15</strong> ต้องมีออเดอร์เพิ่มอย่างน้อยกี่เปอร์เซ็นต์เพื่อให้ได้เงินเหลือรวมเท่าเดิม?</p></div></div>
-                <div class="quiz-options" role="group" aria-label="คำตอบอัตราเพิ่มของออเดอร์"><button type="button" class="quiz-option" data-answer="25">25% <span>↗</span></button><button type="button" class="quiz-option" data-answer="33.3">33.3% <span>↗</span></button><button type="button" class="quiz-option" data-answer="5">5% <span>↗</span></button></div>
-                <div id="quiz-feedback" class="quiz-feedback" role="status">เลือกคำตอบเพื่อรับคำอธิบาย</div>
-                <div class="plan-card"><div class="plan-header"><div><p class="section-kicker">แผนตัวอย่าง 7 วัน</p><h4>ทดลองเปลี่ยนรูปเมนูหนึ่งรายการ</h4></div><span>OWNER CONTROL</span></div><div class="plan-points"><div><span>01</span><p>คงราคา ปริมาณอาหาร และเวลาเปิดร้านให้เหมือนเดิม</p></div><div><span>02</span><p>ติดตามออเดอร์ ต้นทุน และการยกเลิกรายวัน</p></div><div><span>03</span><p>หยุดหากใช้เงินเกินเพดานหรือการยกเลิกเพิ่มขึ้น</p></div></div><label class="field plan-limit"><span>เพดานใช้จ่ายที่เจ้าของร้านอนุมัติ</span><div class="input-wrap"><span>฿</span><input id="spend-cap" type="number" min="0" step="any" value="200" inputmode="decimal" /></div></label><p id="plan-error" class="form-error" role="alert"></p><div class="plan-actions"><button class="primary-btn" type="button" id="approve-plan">อนุมัติแผนตัวอย่าง <span>→</span></button><button class="text-btn" type="button" id="skip-plan">ข้ามและดูตัวอย่างผล</button></div><p class="plan-disclaimer">การอนุมัตินี้บันทึกในเบราว์เซอร์เท่านั้น ไม่เปลี่ยนข้อมูลร้านหรือใช้เงินจริง</p></div>
-                <div class="stage-actions"><button class="text-btn" type="button" data-back="2">← กลับไปแก้สมมติฐาน</button></div>
+                <div class="stage-heading"><span class="stage-icon">03</span><div><p class="section-kicker">Apply the rule to a new case</p><h3 id="stage-3-title">Can you use the rule again?</h3><p class="stage-intro">Another menu item contributes <strong>฿20</strong> per order. A discount reduces that to <strong>฿15</strong>. What order increase is needed to preserve total contribution?</p></div></div>
+                <div class="quiz-options" role="group" aria-label="Order uplift answer choices"><button type="button" class="quiz-option" data-answer="25">25% <span>↗</span></button><button type="button" class="quiz-option" data-answer="33.3">33.3% <span>↗</span></button><button type="button" class="quiz-option" data-answer="5">5% <span>↗</span></button></div>
+                <div id="quiz-feedback" class="quiz-feedback" role="status">Choose an answer to see the explanation.</div>
+                <div class="plan-card"><div class="plan-header"><div><p class="section-kicker">Sample 7-day plan</p><h4>Improve one menu photo</h4></div><span>OWNER CONTROL</span></div><div class="plan-points"><div><span>01</span><p>Keep price, portion size, and opening hours unchanged.</p></div><div><span>02</span><p>Track orders, costs, and cancellations each day.</p></div><div><span>03</span><p>Stop if spending exceeds the cap or cancellations rise.</p></div></div><label class="field plan-limit"><span>Owner-approved spending cap</span><div class="input-wrap"><span>฿</span><input id="spend-cap" type="number" min="0" step="any" value="200" inputmode="decimal" /></div></label><p id="plan-error" class="form-error" role="alert"></p><div class="plan-actions"><button class="primary-btn" type="button" id="approve-plan">Approve sample plan <span>→</span></button><button class="text-btn" type="button" id="skip-plan">Skip to sample review</button></div><p class="plan-disclaimer">Approval stays in this browser. It does not change a live store or spend money.</p></div>
+                <div class="stage-actions"><button class="text-btn" type="button" data-back="2">← Edit assumptions</button></div>
               </section>
 
               <section class="stage hidden" id="stage-4" aria-labelledby="stage-4-title">
-                <div class="stage-heading"><span class="stage-icon">04</span><div><p class="section-kicker">ตัวอย่างผลหลังครบ 7 วัน · ข้อมูลสมมติ</p><h3 id="stage-4-title">ออเดอร์เพิ่ม ไม่ได้พิสูจน์ว่าแผนได้ผล</h3><p class="stage-intro">ลองใส่จำนวนออเดอร์ที่สังเกตได้และการเติบโตของร้านกลุ่มเปรียบเทียบ เพื่อดูว่าข้อสรุปเปลี่ยนอย่างไร</p></div></div>
-                <div class="review-controls"><label class="field"><span>ออเดอร์ที่สังเกตได้</span><div class="input-wrap"><span>#</span><input id="observed-orders" type="number" min="0" step="1" value="112" inputmode="numeric" /></div></label><label class="field"><span>การเติบโตของกลุ่มเปรียบเทียบ</span><div class="input-wrap"><span>%</span><input id="benchmark" type="number" min="-100" step="any" value="8" inputmode="decimal" /></div></label></div>
+                <div class="stage-heading"><span class="stage-icon">04</span><div><p class="section-kicker">7-day review example · Synthetic data</p><h3 id="stage-4-title">More orders do not prove impact</h3><p class="stage-intro">Change observed orders and comparison-shop growth to see how the interpretation changes.</p></div></div>
+                <div class="review-controls"><label class="field"><span>Observed orders</span><div class="input-wrap"><span>#</span><input id="observed-orders" type="number" min="0" step="1" value="112" inputmode="numeric" /></div></label><label class="field"><span>Comparison-shop growth</span><div class="input-wrap"><span>%</span><input id="benchmark" type="number" min="-100" step="any" value="8" inputmode="decimal" /></div></label></div>
                 <p id="review-error" class="form-error" role="alert"></p>
-                <div class="review-metrics"><div><span>ก่อนทดลอง</span><strong id="review-before">฿2,500</strong><small id="review-before-detail">100 ออเดอร์ × ฿25</small></div><div><span>หลังทดลองและหักงบ</span><strong id="review-after">฿2,600</strong><small id="review-after-detail">112 ออเดอร์ × ฿25 − ฿200</small></div><div class="metric-highlight"><span>เทียบการเติบโตของตลาด</span><strong id="review-adjusted">−฿100</strong><small id="review-benchmark-detail">คาดจากกลุ่มเปรียบเทียบ ฿2,700</small></div></div>
-                <div class="review-note"><span>!</span><p id="review-interpretation">ออเดอร์เพิ่ม แต่ผลหลังเทียบกลุ่มเปรียบเทียบยังติดลบ ควรตรวจสอบเพิ่มเติมก่อนขยายแผน</p></div>
-                <div class="decision-card"><div><p class="section-kicker">บันทึกสิ่งที่เรียนรู้</p><h4>คุณจะทำอย่างไรต่อ?</h4><p>เลือกเองจากข้อมูลตัวอย่าง ไม่มีการสั่งงานร้านอัตโนมัติ</p></div><div class="decision-options" role="group" aria-label="การตัดสินใจหลังทดลอง"><button type="button" data-decision="keep">ทำต่อ</button><button type="button" data-decision="change">ปรับแผน</button><button type="button" data-decision="stop">หยุด</button></div><label class="field note-field"><span>เหตุผลสั้น ๆ</span><textarea id="decision-note" rows="3" placeholder="ตัวอย่าง: ขอเช็กต้นทุนและการยกเลิกก่อน"></textarea></label><button class="outline-btn" type="button" id="save-review">บันทึกการเรียนรู้</button><p id="review-saved" class="saved-message" role="status"></p></div>
-                <div class="stage-actions split"><button class="text-btn" type="button" data-back="3">← กลับไปดูแผน</button><button class="outline-btn" type="button" id="download-plan">ดาวน์โหลดสรุปตัวอย่าง ↓</button></div>
+                <div class="review-metrics"><div><span>Before the test</span><strong id="review-before">฿2,500</strong><small id="review-before-detail">100 orders × ฿25</small></div><div><span>After the test and cost</span><strong id="review-after">฿2,600</strong><small id="review-after-detail">112 orders × ฿25 − ฿200</small></div><div class="metric-highlight"><span>After benchmark growth</span><strong id="review-adjusted">−฿100</strong><small id="review-benchmark-detail">Comparison benchmark ฿2,700</small></div></div>
+                <div class="review-note"><span>!</span><p id="review-interpretation">Orders increased, but the benchmark-adjusted result is negative. Check further before expanding the plan.</p></div>
+                <div class="decision-card"><div><p class="section-kicker">Record what you learned</p><h4>What would you do next?</h4><p>Choose based on the sample data. No store action happens automatically.</p></div><div class="decision-options" role="group" aria-label="Decision after the test"><button type="button" data-decision="keep">Keep</button><button type="button" data-decision="change">Change</button><button type="button" data-decision="stop">Stop</button></div><label class="field note-field"><span>Your reason</span><textarea id="decision-note" rows="3" placeholder="Example: check costs and cancellations first"></textarea></label><button class="outline-btn" type="button" id="save-review">Save learning note</button><p id="review-saved" class="saved-message" role="status"></p></div>
+                <div class="stage-actions split"><button class="text-btn" type="button" data-back="3">← Back to plan</button><button class="outline-btn" type="button" id="download-plan">Download sample summary ↓</button></div>
               </section>
             </div>
 
             <aside class="context-column" aria-label="Mission context">
-              <div class="context-card"><div class="context-top"><span class="context-label">YOUR DECISION SNAPSHOT</span><span class="live-chip">LIVE</span></div><div class="context-main"><span>เงินเหลือต่อออเดอร์</span><strong id="snapshot-unit">฿25</strong><small id="snapshot-status">จากราคาขาย ฿100 และต้นทุนผันแปร ฿75</small></div><div class="context-divider"></div><div class="context-row"><span>ยอดออเดอร์ฐาน / สัปดาห์</span><strong id="snapshot-orders">100</strong></div><div class="context-row"><span>เงินเหลือรวม / สัปดาห์</span><strong id="snapshot-weekly">฿2,500</strong></div><div class="context-foot">ราคาขาย − ต้นทุนผันแปร = เงินเหลือก่อนหักต้นทุนคงที่</div></div>
-              <div class="principle-card"><span class="principle-mark">✳</span><p>“เปรียบเทียบ <strong>เงินที่เหลือ</strong> ไม่ใช่ดูเพียงยอดขายที่เพิ่มขึ้น”</p><small>หลักคิดหลักของ Margin Missions</small></div>
-              <div class="prototype-note"><strong>ขอบเขตของต้นแบบ</strong><p>การคำนวณใช้กฎที่ตรวจสอบได้ โค้ชและผลทบทวนเป็นตัวอย่างจำลอง ยังไม่มี AI สด การเชื่อม GrabMerchant การชำระเงิน หรือการใช้จ่ายจริง</p></div>
+              <div class="context-card"><div class="context-top"><span class="context-label">YOUR DECISION SNAPSHOT</span><span class="live-chip">LIVE</span></div><div class="context-main"><span>Contribution per order</span><strong id="snapshot-unit">฿25</strong><small id="snapshot-status">From ฿100 price and ฿75 variable costs</small></div><div class="context-divider"></div><div class="context-row"><span>Baseline orders / week</span><strong id="snapshot-orders">100</strong></div><div class="context-row"><span>Contribution / week</span><strong id="snapshot-weekly">฿2,500</strong></div><div class="context-foot">Selling price − variable costs = contribution before fixed costs</div></div>
+              <div class="principle-card"><span class="principle-mark">✳</span><p>“Compare <strong>what remains</strong> instead of sales growth alone.”</p><small>The core Margin Missions rule</small></div>
+              <div class="prototype-note"><strong>Prototype scope</strong><p>Calculations use explicit rules. Coaching and review are scripted examples. There is no live AI, GrabMerchant connection, payment, or real spending.</p></div>
             </aside>
           </div>
         </section>

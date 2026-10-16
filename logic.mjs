@@ -1,11 +1,11 @@
 export function calculateCosts({ price, ingredients, packaging, platform, other, orders }) {
   const values = [price, ingredients, packaging, platform, other, orders];
   if (values.some(value => value === '' || value === null || !Number.isFinite(Number(value)))) {
-    throw new Error('กรุณากรอกต้นทุนให้ครบทุกช่อง ต้นทุนที่ยังไม่ทราบต้องไม่ถูกนับเป็นศูนย์');
+    throw new Error('costsMissing');
   }
   const [p, i, k, f, o, q] = values.map(Number);
   if (p <= 0 || [i, k, f, o].some(value => value < 0) || !Number.isInteger(q) || q <= 0) {
-    throw new Error('ราคาขายต้องมากกว่า 0 ต้นทุนต้องไม่ติดลบ และจำนวนออเดอร์ต้องเป็นจำนวนเต็มบวก');
+    throw new Error('costsInvalid');
   }
   const variableCost = i + k + f + o;
   const unit = p - variableCost;
@@ -15,11 +15,11 @@ export function calculateCosts({ price, ingredients, packaging, platform, other,
 export function calculateComparison(costs, { discount, photoCost, uplift }) {
   const values = [discount, photoCost, uplift];
   if (values.some(value => value === '' || value === null || !Number.isFinite(Number(value)))) {
-    throw new Error('กรุณากรอกส่วนลดและงบทดลองให้ครบ');
+    throw new Error('comparisonMissing');
   }
   const [d, b, u] = values.map(Number);
   if (d < 0 || b < 0 || u < 0 || u > 100) {
-    throw new Error('ส่วนลดและงบทดลองต้องไม่ติดลบ และอัตราเพิ่มของออเดอร์ต้องอยู่ระหว่าง 0–100%');
+    throw new Error('comparisonInvalid');
   }
   const projectedOrders = costs.orders * (1 + u / 100);
   const discountedUnit = costs.unit - d;
@@ -40,11 +40,11 @@ export function calculateComparison(costs, { discount, photoCost, uplift }) {
 export function calculateReview(costs, { observedOrders, benchmarkGrowth, photoCost }) {
   const values = [observedOrders, benchmarkGrowth, photoCost];
   if (values.some(value => value === '' || value === null || !Number.isFinite(Number(value)))) {
-    throw new Error('กรุณากรอกออเดอร์ที่สังเกตได้และค่ากลุ่มเปรียบเทียบ');
+    throw new Error('reviewMissing');
   }
   const [observed, growth, spend] = values.map(Number);
   if (!Number.isInteger(observed) || observed < 0 || growth < -100 || spend < 0) {
-    throw new Error('ออเดอร์ต้องเป็นจำนวนเต็มไม่ติดลบ และตัวเลขอื่นต้องอยู่ในช่วงที่ถูกต้อง');
+    throw new Error('reviewInvalid');
   }
   const after = observed * costs.unit - spend;
   const benchmark = costs.orders * (1 + growth / 100) * costs.unit;

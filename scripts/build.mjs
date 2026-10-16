@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputDirectory = resolve(projectRoot, 'dist');
-const staticFiles = ['index.html', 'styles.css', 'app.js', 'logic.mjs'];
+const staticFiles = ['index.html', 'styles.css', 'app.js', 'logic.mjs', 'i18n.mjs'];
 
 // Keep the deploy artifact limited to the app. Guard the recursive cleanup path.
 if (dirname(outputDirectory) !== projectRoot || basename(outputDirectory) !== 'dist') {

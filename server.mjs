@@ -11,6 +11,7 @@ const files = new Map([
   ['/styles.css', ['styles.css', 'text/css; charset=utf-8']],
   ['/app.js', ['app.js', 'text/javascript; charset=utf-8']],
   ['/logic.mjs', ['logic.mjs', 'text/javascript; charset=utf-8']],
+  ['/i18n.mjs', ['i18n.mjs', 'text/javascript; charset=utf-8']],
 ]);
 const port = Number(process.env.PORT || 4173);
 

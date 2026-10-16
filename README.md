@@ -1,6 +1,8 @@
 # Margin Missions
 
-An interactive, mobile-friendly merchant learning prototype by **Team PluemPiTi**. It helps a restaurant owner evaluate one promotion decision using confirmed variable costs, a demand assumption, a new practice question, an owner-controlled test plan, and a cautious review. The interface is in Thai for the proposed merchant audience; this README is in English.
+An interactive, mobile-friendly merchant learning prototype by **Team PluemPiTi**. It helps a restaurant owner evaluate one promotion decision using confirmed variable costs, a demand assumption, a new practice question, an owner-controlled test plan, and a cautious review. The interface opens in English and can be switched to Thai. This README is in English.
+
+**Live prototype:** <https://grab-drab-pi.vercel.app/>
 
 ## Run locally
 
@@ -24,7 +26,7 @@ The root `index.html` can also be hosted on any static web host. Use an HTTP ser
 2. Keep the project root at `.`. The checked-in `vercel.json` selects the **Other** framework, runs `npm run build`, and publishes `dist/`.
 3. No environment variables, server command, or Node web service are required. Click **Deploy**. Later pushes to `main` can trigger redeploys through the Git integration.
 
-The build copies only `index.html`, `styles.css`, `app.js`, and `logic.mjs` into `dist/`. The local Node server, tests, README, and original source documents are not part of the deployed website. To check the exact output locally:
+The build copies only `index.html`, `styles.css`, `app.js`, `logic.mjs`, and `i18n.mjs` into `dist/`. The local Node server, tests, README, and original source documents are not part of the deployed website. To check the exact output locally:
 
 ```bash
 npm run build
@@ -39,6 +41,8 @@ Open <http://127.0.0.1:4173>. `npm run preview` uses the same small HTTP server 
 2. **Compare:** Change the discount, one-off photo test cost, and assumed order uplift. See weekly contribution for doing nothing, discounting, and improving a menu photo. The app calculates the extra orders needed to break even.
 3. **Practise and approve:** Solve a different break-even question. The owner can approve a sample seven-day photo test only after passing the question and setting a spending cap that covers the test. They can also skip the plan and inspect the review example.
 4. **Review:** Vary observed orders and benchmark growth. The app separates raw change from the benchmark-adjusted gap. The owner can record a decision locally and download a text summary of the current scenario.
+
+The **EN / ไทย** control switches all lesson copy, calculation explanations, validation messages, and the downloaded summary without clearing entered numbers. English is the first-visit default; the chosen language is remembered in the current browser.
 
 ## Calculation model
 
@@ -70,9 +74,10 @@ The original ZIP, presentation, and PDF remain local source material and are int
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Accessible Thai application markup |
+| `index.html` | Accessible, bilingual application markup |
 | `styles.css` | Responsive layout and visual system |
 | `app.js` | Interaction and local browser state |
+| `i18n.mjs` | English and Thai interface copy |
 | `logic.mjs` | Pure calculation and input validation functions |
 | `logic.test.mjs` | Tests for documented examples and invalid inputs |
 | `server.mjs` | Dependency-free local HTTP server |
